@@ -6,12 +6,15 @@
 	"vars": {
 		"RECORD_NAME": "mk.gg",
 	},
+	// Environment variables are defined in .env file
+	// CLOUDFLARE_DNS_API_TOKEN
+	// ZONE_ID
 	"triggers": {
 		"crons": [
 			"* * * * *"
 		] // Every minute
+	},
+	"observability": {
+		"enabled": true,
 	}
-	// Environment variables are defined in .env file
-	// CLOUDFLARE_DNS_API_TOKEN
-	// ZONE_ID
 }

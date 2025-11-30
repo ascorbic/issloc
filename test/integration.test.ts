@@ -15,7 +15,9 @@ describe('Worker Integration', () => {
     fetchMock.activate();
     fetchMock.disableNetConnect();
 
-    env.CLOUDFLARE_API_TOKEN = 'test-api-token';
+    env.ZONE_ID = ZONE_ID;
+    env.RECORD_NAME = RECORD_NAME;
+    env.CLOUDFLARE_DNS_API_TOKEN = 'test-api-token';
   });
 
   it('should update LOC record with current ISS position when record exists', async () => {

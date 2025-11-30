@@ -15,8 +15,8 @@ export async function scheduled(
     console.error('Missing required environment variable: RECORD_NAME');
     return;
   }
-  if (!env.CLOUDFLARE_API_TOKEN) {
-    console.error('Missing required environment variable: CLOUDFLARE_API_TOKEN');
+  if (!env.CLOUDFLARE_DNS_API_TOKEN) {
+    console.error('Missing required environment variable: CLOUDFLARE_DNS_API_TOKEN');
     return;
   }
 
@@ -28,7 +28,7 @@ export async function scheduled(
       env.ZONE_ID,
       env.RECORD_NAME,
       position,
-      env.CLOUDFLARE_API_TOKEN
+      env.CLOUDFLARE_DNS_API_TOKEN
     );
 
     console.log(created ? 'Created new LOC record:' : 'Updated existing LOC record:', id);

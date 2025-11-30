@@ -23,7 +23,7 @@ pnpm install
 Create a `.env` file with your configuration:
 
 ```bash
-CLOUDFLARE_API_TOKEN=your-api-token-here
+CLOUDFLARE_DNS_API_TOKEN=your-api-token-here
 ZONE_ID=your-zone-id-here
 RECORD_NAME=iss.yourdomain.com
 ```

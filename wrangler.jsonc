@@ -2,9 +2,9 @@
 	"$schema": "./node_modules/wrangler/config-schema.json",
 	"name": "issloc",
 	"main": "src/index.ts",
-	"compatibility_date": "2024-11-01",
+	"compatibility_date": "2025-11-01",
 	"vars": {
-		"RECORD_NAME": "mk.gg",
+		"RECORD_NAME": "iss.mk.gg",
 	},
 	// Environment variables are defined in .env file
 	// CLOUDFLARE_DNS_API_TOKEN

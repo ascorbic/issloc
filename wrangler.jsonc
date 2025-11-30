@@ -1,0 +1,11 @@
+{
+	"name": "issloc",
+	"main": "src/index.ts",
+	"compatibility_date": "2024-11-01",
+	"triggers": {
+		"crons": [
+			"* * * * *"
+		] // Every minute
+	}
+	// Environment variables are defined in .env file
+}

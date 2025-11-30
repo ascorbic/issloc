@@ -1,0 +1,15 @@
+.claude
+node_modules
+.dev.vars
+.env
+
+# Wrangler artifacts
+.wrangler/
+wrangler.toml
+worker-configuration.d.ts
+
+# Test coverage
+coverage/
+
+# Build artifacts
+dist/
